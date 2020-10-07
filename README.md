@@ -9,9 +9,6 @@ vcpkg install detours:x86-windows-static
 
 2. Build with Visual Studio
 
-# Requirements
-- [Detours 4](https://github.com/microsoft/Detours)
-
 # License
 |Name|License|Modified|URL|
 |:--|:--|:--|:--|
