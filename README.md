@@ -13,5 +13,4 @@ vcpkg install detours:x86-windows-static
 - [Detours 4](https://github.com/microsoft/Detours)
 
 # Special thanks
-- This project uses modified DoubleAgent<br>
-https://github.com/Cybellum/DoubleAgent
+- This project uses modified [DoubleAgent](https://github.com/Cybellum/DoubleAgent)
