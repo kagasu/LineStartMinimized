@@ -12,5 +12,5 @@ vcpkg install detours:x86-windows-static
 # License
 |Name|License|Modified|URL|
 |:--|:--|:--|:--|
-|Detours 4.x|MIT|No|https://github.com/microsoft/Detours|
+|Detours|MIT|No|https://github.com/microsoft/Detours|
 |DoubleAgent|Apache 2.0|Yes|https://github.com/Cybellum/DoubleAgent|
