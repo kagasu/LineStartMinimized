@@ -47,8 +47,8 @@ INT wmain(IN SIZE_T nArgc, IN PCWSTR *ppcwszArgv)
 	/* Prints usage */
 	if (1 == nArgc)
 	{
-		(VOID)wprintf(L"Usage:\LineStartMinimized.exe install\\uninstall\\repair process_name\n");
-		(VOID)wprintf(L"e.g.\LineStartMinimized.exe install cmd.exe\n");
+		(VOID)wprintf(L"Usage:LineStartMinimized.exe install\\uninstall\\repair process_name\n");
+		(VOID)wprintf(L"e.g.LineStartMinimized.exe install cmd.exe\n");
 		return 0;
 	}
 
