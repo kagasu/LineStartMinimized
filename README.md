@@ -1,5 +1,18 @@
 # LineStartMinimized
-WIP
+LINE Startt Minimize.
+
+# How to use
+### Install
+```
+> LineStartMinimized.exe install linelauncher.exe
+Succeeded
+```
+
+### Uninstall
+```
+> LineStartMinimized.exe uninstall linelauncher.exe
+Succeeded
+```
 
 # How to build
 1. Install Detours
