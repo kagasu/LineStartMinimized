@@ -1,5 +1,6 @@
 # LineStartMinimized
-LINE Startt Minimize.
+- Startt Minimize.
+- Remove splash screen.
 
 # How to use
 ### Install
