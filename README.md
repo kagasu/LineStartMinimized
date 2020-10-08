@@ -1,5 +1,5 @@
 # LineStartMinimized
-- Startt Minimized.
+- Start Minimized.
 - Remove splash screen.
 
 # How to use
