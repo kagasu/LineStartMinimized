@@ -1,10 +1,7 @@
-/* Includes ******************************************************************/
 #include <Windows.h>
-//#include <winternl.h>
-#include <iostream>
 #include <tlhelp32.h>
+#include <string>
 #include "Status.h"
-#include "Process.hpp"
 #include "VerifierDll.hpp"
 #include "Hook.hpp"
 

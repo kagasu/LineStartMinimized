@@ -1,5 +1,4 @@
 #include <Windows.h>
-#include <iostream>
 #include "Injector.hpp"
 #include "DetoursHelper.h"
 
@@ -256,11 +255,9 @@ void HookLineLauncher()
 		PPS_ATTRIBUTE_LIST  AttributeList) -> NTSTATUS
 	{
 		ThreadFlags = 0x1; // THREAD_CREATE_FLAGS_CREATE_SUSPENDED
-		std::cout << "hookedNtCreateUserProcess called" << std::endl;
 		auto ret = originalNtCreateUserProcess(ProcessHandle, ThreadHandle, ProcessDesiredAccess, ThreadDesiredAccess, ProcessObjectAttributes, ThreadObjectAttributes, ProcessFlags, ThreadFlags, ProcessParameters, CreateInfo, AttributeList);
 		lineProcessHandle = *ProcessHandle;
 		lineThreadHandle = *ThreadHandle;
-		std::cout << std::hex << "lineThreadHandle:" << lineThreadHandle << std::endl;
 		return ret;
 	};
 
@@ -269,14 +266,9 @@ void HookLineLauncher()
 		HANDLE ThreadHandle,
 		PULONG SuspendCount) -> NTSTATUS
 	{
-		std::cout << "hookedNtResumeThread called" << std::endl;
-
 		if (ThreadHandle == lineThreadHandle)
 		{
-			std::cout << "LINE NtResumeThread" << std::hex << "ThreadHandle:" << ThreadHandle << std::endl;
-			std::cout << std::dec << "line.exe pid=" << GetProcessId(lineProcessHandle) << std::endl;
 			auto result = InjectDll(GetProcessId(lineProcessHandle));
-			std::cout << "inject result" << result << std::endl;
 		}
 		
 		return originalNtResumeThread(ThreadHandle, SuspendCount);
@@ -309,7 +301,6 @@ void HookLine()
 		if (dwExStyle == (WS_CLIPCHILDREN | WS_CLIPSIBLINGS | WS_POPUP))
 		{
 			// Hide splash window
-			std::cout << "Hide splash window" << std::endl;
 			nWidth = 0;
 			nHeight = 0;
 		}

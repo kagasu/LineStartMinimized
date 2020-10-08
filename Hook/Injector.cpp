@@ -1,5 +1,4 @@
 #include <Windows.h>
-#include <iostream>
 
 bool InjectDll(const int pid)
 {

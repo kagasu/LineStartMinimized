@@ -22,16 +22,12 @@
     <ClInclude Include="DetoursHelper.h" />
     <ClInclude Include="Hook.hpp" />
     <ClInclude Include="Injector.hpp" />
-    <ClInclude Include="Memory.h" />
-    <ClInclude Include="Process.hpp" />
     <ClInclude Include="VerifierDll.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Hook.cpp" />
     <ClCompile Include="Injector.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Memory.c" />
-    <ClCompile Include="Process.cpp" />
     <ClCompile Include="VerifierDll.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -122,7 +118,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;HOOK_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(UM_IncludePath)\..\km;$(SolutionDir)Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
