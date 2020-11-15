@@ -5,13 +5,13 @@
 # How to use
 ### Install
 ```
-> LineStartMinimized.exe install linelauncher.exe
+> LineStartMinimized.exe install LineLauncher.exe
 Succeeded
 ```
 
 ### Uninstall
 ```
-> LineStartMinimized.exe uninstall linelauncher.exe
+> LineStartMinimized.exe uninstall LineLauncher.exe
 Succeeded
 ```
 
