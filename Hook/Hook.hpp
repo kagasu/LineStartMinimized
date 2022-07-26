@@ -1,4 +1,5 @@
-#pragma once
+﻿#pragma once
 
-void HookLineLauncher();
+#include "DetoursHelper.h"
+
 void HookLine();
