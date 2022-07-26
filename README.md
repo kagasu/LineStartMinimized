@@ -1,5 +1,6 @@
 # LineStartMinimized
 - Start Minimized.
+- Reduce splash window.
 
 # How to use
 ### Install
