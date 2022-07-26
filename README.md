@@ -20,7 +20,7 @@ copy C:\Users\%username%\Downloads\dbghelp.dll C:\Users\%username%\AppData\Local
 ### Uninstall
 1. Move `dbghelp.dll`
 ```
-move /Y C:\Users\%username%\AppData\Local\LINE\bin\current\original_dll\dbghelp.dll C:\Users\%username%\Downloads\dbghelp.dll
+move /Y C:\Users\%username%\AppData\Local\LINE\bin\current\original_dll\dbghelp.dll C:\Users\%username%\AppData\Local\LINE\bin\current\dbghelp.dll
 ```
 
 # License
