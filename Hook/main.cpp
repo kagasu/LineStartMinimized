@@ -1,4 +1,4 @@
-﻿#include <Windows.h>
+#include <Windows.h>
 #include <tlhelp32.h>
 #include <Psapi.h>
 #include <iostream>
@@ -1679,7 +1679,6 @@ HANDLE WINAPI hookedCreateFileA(
 		return originalEnumProcessModulesEx(lpFileName, dwDesiredAccess, dwShareMode, lpSecurityAttributes, dwCreationDisposition, dwFlagsAndAttributes, hTemplateFile);
 	}
 }
-
 
 BOOL WINAPI DllMain(HINSTANCE hinstModule, DWORD dwReason, LPVOID lpvReserved)
 {
