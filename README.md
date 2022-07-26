@@ -1,30 +1,29 @@
 # LineStartMinimized
 - Start Minimized.
-- Remove splash screen.
 
 # How to use
 ### Install
+1. Move original `dbghelp.dll` 
 ```
-> LineStartMinimized.exe install LineLauncher.exe
-Succeeded
+cd C:\Users\%username%\AppData\Local\LINE\bin\current
+mkdir C:\Users\%username%\AppData\Local\LINE\bin\current\original_dll
+move dbghelp.dll original_dll\dbghelp.dll
+```
+
+2. Download modified `dbghelp.dll` from GitHub
+
+3. Copy `dbghelp.dll`
+```
+copy C:\Users\%username%\Downloads\dbghelp.dll C:\Users\%username%\AppData\Local\LINE\bin\current\dbghelp.dll
 ```
 
 ### Uninstall
+1. Move `dbghelp.dll`
 ```
-> LineStartMinimized.exe uninstall LineLauncher.exe
-Succeeded
+move /Y C:\Users\%username%\AppData\Local\LINE\bin\current\original_dll\dbghelp.dll C:\Users\%username%\Downloads\dbghelp.dll
 ```
-
-# How to build
-1. Install Detours
-```
-vcpkg install detours:x86-windows-static
-```
-
-2. Build with Visual Studio
 
 # License
 |Name|License|Modified|URL|
 |:--|:--|:--|:--|
 |Detours|MIT|No|https://github.com/microsoft/Detours|
-|DoubleAgent|Apache 2.0|Yes|https://github.com/Cybellum/DoubleAgent|
